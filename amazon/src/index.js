@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-// import { DataProvider } from './Component/DataProvider/DataProvider';
-// import {initialState, reducer} from './Utility/reducer'
+import { DataProvider } from './Component/DataProvider/DataProvider';
+import {initialState, reducer} from './Utility/reducer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <DataProvider reducer={reducer} initialState={initialState} > */}
+    <DataProvider reducer={reducer} initialState={initialState} >
     <App />
-    {/* </DataProvider> */}
+    </DataProvider>
   </React.StrictMode>
 );
 
