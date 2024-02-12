@@ -77,6 +77,7 @@ const Footer = () => {
           <a href="" className={classes.footer_language}>
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1024px-Flag_of_the_United_States.svg.png" alt="Language" />
             <p>United States</p>
+            {/* <span>United States</span> */}
           </a>
         </div>
       </div>
