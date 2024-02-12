@@ -29,7 +29,7 @@ function Header() {
                         </span>
                         <div>
                             <p>Delivered to</p>
-                            <span>Canada</span>
+                            <span>USA</span>
                         </div>
                     </div>
                     </div>  
@@ -44,7 +44,7 @@ function Header() {
                     {/* other section */}
                     <div className={classes.order__container}>
                         <Link to="" className={classes.language}>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Canada_flag_icon.png/800px-Canada_flag_icon.png?20200402074802" alt="" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="" />
 
                             <select name="" id="">
                             <option value="">EN</option>

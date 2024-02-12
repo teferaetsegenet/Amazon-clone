@@ -1,5 +1,6 @@
 import React, { useContext }  from 'react'
-import Rating from '@mui/lab/Rating';
+// import Rating from '@mui/lab/Rating';
+import Rating from '@mui/material/Rating'
 
 import CurrencyFormat from '../CurrencyFormat/CurrencyFormat'
 import classes from './Products.module.css'
@@ -14,8 +15,6 @@ function ProductCard({product, flex, renderDesc, renderAdd}) {
         const [state, dispatch]=useContext(DataContext)
         // console.log(DataContext)
         // console.log(state)
-
-
 
         const addToCart = ()=>{
             dispatch({
