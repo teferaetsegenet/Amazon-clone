@@ -6,6 +6,7 @@ import Product from '../../Component/Products/Product';
 import Footer from "../../Component/Footer/Footer"
 
 
+
 function Landing() {
     return (
         <div>
