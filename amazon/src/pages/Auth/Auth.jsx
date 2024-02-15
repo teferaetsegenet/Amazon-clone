@@ -1,6 +1,6 @@
 import React, {useState, useContext} from 'react'
 import classes from "./signup.module.css"
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { auth } from "../../Utility/firebase";
 import {signInWithEmailAndPassword, createUserWithEmailAndPassword} from "firebase/auth"
 import { ClipLoader } from 'react-spinners';
@@ -18,8 +18,9 @@ function Auth() {
   })
 
   const [{user}, dispatch] = useContext(DataContext)
+  const navigate = useNavigate()
 
-  console.log(user)
+  // console.log(user)
 
   const authHandler = async(e)=>{
 e.preventDefault()
@@ -35,6 +36,7 @@ if (e.target.name == "signin") {
       user:userInfo.user 
     });
     setLoading({...loading, signIn:false})
+    navigate("/")
   })
   .catch((err)=>{
     setError(err.message);
@@ -52,6 +54,7 @@ if (e.target.name == "signin") {
       user:userInfo.user 
     });
     setLoading({...loading, signUp:false})
+    navigate("/");
   })
   .catch((err) =>{
     setError(err.message);
@@ -64,7 +67,7 @@ if (e.target.name == "signin") {
 
     return(
       <section className={classes.login}>
-        <Link>
+        <Link to={"/"}>
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="" />
         </Link>
         {/*form*/}
@@ -110,7 +113,16 @@ if (e.target.name == "signin") {
           </p>
 
           {/*create acct btn*/}
-          <button type= "submit" onClick={authHandler} name="signup"  className={classes.login__registerButton}>Create your Amazon Account
+          <button type= "submit" 
+          onClick={authHandler} n
+          ame="signup"  
+          className={classes.login__registerButton}
+          >
+             {loading.signUp ? ( 
+              <ClipLoader color="#000" size={15}></ClipLoader>
+              ) : (
+                "Create your Amazon Account"
+                )}
           
           </button>
           { error && ( 
