@@ -5,7 +5,7 @@ import Header from '../Header/Header'
     return (
         <div>
             <Header />
-            {children}
+            {children} 
         </div>
     )
     }
