@@ -27,9 +27,7 @@ auth.onAuthStateChanged((authUser)=>{
 });
 
 
-},[]);
-
-
+},[user]);
 
   return (
     <div>
