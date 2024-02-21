@@ -27,8 +27,6 @@ app.post("/payment/create", async(req, res)=>{
             currency: "usd"
         });
 
-       
-
         res.status(201).json({
             clientSecret: paymentIntent.client_secret,
         });
@@ -45,4 +43,5 @@ app.listen(5000, (err)=> {
     console.log("Amazon Servr Runing on Port: 5000, http://localhost:5000")
 
 });
+exports.api = functions.https.onRequest(app);
 
