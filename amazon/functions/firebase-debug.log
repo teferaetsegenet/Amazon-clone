@@ -1,0 +1,1896 @@
+[debug] [2024-02-19T06:29:13.237Z] ----------------------------------------------------------------------
+[debug] [2024-02-19T06:29:13.240Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tefer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-02-19T06:29:13.240Z] CLI Version:   13.3.0
+[debug] [2024-02-19T06:29:13.240Z] Platform:      win32
+[debug] [2024-02-19T06:29:13.240Z] Node Version:  v20.10.0
+[debug] [2024-02-19T06:29:13.241Z] Time:          Mon Feb 19 2024 01:29:13 GMT-0500 (Eastern Standard Time)
+[debug] [2024-02-19T06:29:13.241Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-19T06:29:13.244Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-02-19T06:29:13.372Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-19T06:29:13.373Z] > authorizing via signed-in user (tsege.t6@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-02-19T06:29:13.381Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-19T06:29:13.382Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-02-19T06:29:13.393Z] [hub] writing locator at C:\Users\tefer\AppData\Local\Temp\hub-clone-d489a.json
+[debug] [2024-02-19T06:29:13.411Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-19T06:29:13.411Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-19T06:29:13.411Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2024-02-19T06:29:13.419Z] defaultcredentials: writing to file C:\Users\tefer\AppData\Roaming\firebase\tsege_t6_gmail.com_application_default_credentials.json
+[debug] [2024-02-19T06:29:13.446Z] Setting GAC to C:\Users\tefer\AppData\Roaming\firebase\tsege_t6_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\tefer\\AppData\\Roaming\\firebase\\tsege_t6_gmail.com_application_default_credentials.json"}}
+[debug] [2024-02-19T06:29:13.448Z] > refreshing access token with scopes: []
+[debug] [2024-02-19T06:29:13.448Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-19T06:29:13.448Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-19T06:29:13.503Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-02-19T06:29:13.503Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-02-19T06:29:13.723Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-19T06:29:13.723Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-19T06:29:13.730Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-d489a/adminSdkConfig [none]
+[debug] [2024-02-19T06:29:14.227Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-d489a/adminSdkConfig 200
+[debug] [2024-02-19T06:29:14.227Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-d489a/adminSdkConfig {"projectId":"clone-d489a","storageBucket":"clone-d489a.appspot.com"}
+[debug] [2024-02-19T06:29:14.249Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-02-19T06:29:14.249Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-02-19T06:29:14.249Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\tefer\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\tefer\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-02-19T06:29:14.390Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-02-19T06:29:14.391Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\" for Cloud Functions..."}}
+[debug] [2024-02-19T06:29:14.530Z] Validating nodejs source
+[debug] [2024-02-19T06:29:16.053Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T06:29:16.053Z] Building nodejs source
+[debug] [2024-02-19T06:29:16.054Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T06:29:16.057Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T06:29:16.063Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8261
+
+[debug] [2024-02-19T06:29:17.143Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-d489a/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-d489a/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-02-19T06:31:59.648Z] [work-queue] {"queuedWork":["/clone-d489a/us-central1/api-2024-02-19T06:31:59.648Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-19T06:31:59.649Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-d489a/us-central1/api-2024-02-19T06:31:59.648Z"],"workRunningCount":1}
+[debug] [2024-02-19T06:31:59.649Z] Accepted request GET /clone-d489a/us-central1/api --> us-central1-api
+[debug] [2024-02-19T06:31:59.652Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-19T06:31:59.653Z] [functions] Got req.url=/clone-d489a/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-d489a/us-central1/api, mapping to path=/"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T06:31:59.664Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2024-02-19T06:31:59.666Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2024-02-19T06:32:00.631Z] [runtime-status] [25340] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25340] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\tefer\\\\OneDrive\\\\Desktop\\\\Evangade\\\\classmaterials\\\\phase4\\\\Amazon-clone\\\\amazon\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-19T06:32:00.632Z] [runtime-status] [25340] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25340] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\tefer\\\\OneDrive\\\\Desktop\\\\Evangade\\\\classmaterials\\\\phase4\\\\Amazon-clone\\\\amazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-19T06:32:00.632Z] [runtime-status] [25340] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25340] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-02-19T06:32:00.633Z] [runtime-status] [25340] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25340] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\tefer\\\\OneDrive\\\\Desktop\\\\Evangade\\\\classmaterials\\\\phase4\\\\Amazon-clone\\\\amazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-19T06:32:00.898Z] [runtime-status] [25340] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25340] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-02-19T06:32:00.899Z] [runtime-status] [25340] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25340] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\tefer\\\\OneDrive\\\\Desktop\\\\Evangade\\\\classmaterials\\\\phase4\\\\Amazon-clone\\\\amazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-02-19T06:32:00.899Z] [runtime-status] [25340] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25340] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\tefer\\\\OneDrive\\\\Desktop\\\\Evangade\\\\classmaterials\\\\phase4\\\\Amazon-clone\\\\amazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-19T06:32:00.901Z] [runtime-status] [25340] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25340] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\tefer\\\\OneDrive\\\\Desktop\\\\Evangade\\\\classmaterials\\\\phase4\\\\Amazon-clone\\\\amazon\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-19T06:32:00.904Z] [runtime-status] [25340] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25340] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\tefer\\\\OneDrive\\\\Desktop\\\\Evangade\\\\classmaterials\\\\phase4\\\\Amazon-clone\\\\amazon\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-19T06:32:00.904Z] [runtime-status] [25340] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25340] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\tefer\\\\OneDrive\\\\Desktop\\\\Evangade\\\\classmaterials\\\\phase4\\\\Amazon-clone\\\\amazon\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-02-19T06:32:01.062Z] [runtime-status] [25340] Functions runtime initialized. {"cwd":"C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions","node_version":"20.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25340] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\tefer\\\\OneDrive\\\\Desktop\\\\Evangade\\\\classmaterials\\\\phase4\\\\Amazon-clone\\\\amazon\\\\functions\",\"node_version\":\"20.10.0\"}"}}
+[debug] [2024-02-19T06:32:01.062Z] [runtime-status] [25340] Listening to port: \\?\pipe\fire_emu_8e8d679394b8b63f {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25340] Listening to port: \\\\?\\pipe\\fire_emu_8e8d679394b8b63f"}}
+[debug] [2024-02-19T06:32:01.093Z] [worker-us-central1-api-16c92a4b-89b6-48ec-acca-4a7ce3378b25]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-16c92a4b-89b6-48ec-acca-4a7ce3378b25]: IDLE"}}
+[debug] [2024-02-19T06:32:01.094Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-02-19T06:32:01.095Z] [worker-us-central1-api-16c92a4b-89b6-48ec-acca-4a7ce3378b25]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-16c92a4b-89b6-48ec-acca-4a7ce3378b25]: BUSY"}}
+[debug] [2024-02-19T06:32:01.105Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 10.6537ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 10.6537ms"}}
+[debug] [2024-02-19T06:32:01.106Z] [worker-us-central1-api-16c92a4b-89b6-48ec-acca-4a7ce3378b25]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-16c92a4b-89b6-48ec-acca-4a7ce3378b25]: IDLE"}}
+[debug] [2024-02-19T06:32:01.106Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-02-19T06:32:01.106Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-02-19T06:32:01.106Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-19T08:06:37.560Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:06:38.583Z] Validating nodejs source
+[debug] [2024-02-19T08:06:40.148Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:06:40.149Z] Building nodejs source
+[debug] [2024-02-19T08:06:40.149Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:06:40.152Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:06:40.160Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-02-19T08:06:40.220Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8654
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    const total = {req.query.total}; 
+                      ^
+
+SyntaxError: Unexpected token '.'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:06:40.658Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '.'
+[debug] [2024-02-19T08:06:41.221Z] Validating nodejs source
+[debug] [2024-02-19T08:06:42.421Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:06:42.421Z] Building nodejs source
+[debug] [2024-02-19T08:06:42.421Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:06:42.423Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:06:42.428Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8484
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    const total = {req.query.total}; 
+                      ^
+
+SyntaxError: Unexpected token '.'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:06:42.665Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '.'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-19T08:06:55.809Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:06:56.820Z] Validating nodejs source
+[debug] [2024-02-19T08:06:58.099Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:06:58.099Z] Building nodejs source
+[debug] [2024-02-19T08:06:58.099Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:06:58.102Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:06:58.105Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-02-19T08:06:58.111Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8149
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    const total = arse{req.query.total}; 
+                      ^
+
+SyntaxError: Unexpected token '{'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:06:58.338Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '{'
+[debug] [2024-02-19T08:06:59.122Z] Validating nodejs source
+[debug] [2024-02-19T08:07:00.107Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:07:00.107Z] Building nodejs source
+[debug] [2024-02-19T08:07:00.107Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:07:00.108Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:07:00.112Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8325
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    const total = arse{req.query.total}; 
+                      ^
+
+SyntaxError: Unexpected token '{'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:07:00.315Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '{'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-19T08:07:05.584Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:07:06.589Z] Validating nodejs source
+[debug] [2024-02-19T08:07:07.879Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:07:07.879Z] Building nodejs source
+[debug] [2024-02-19T08:07:07.879Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:07:07.881Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:07:07.886Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-02-19T08:07:07.902Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8689
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    const total = parse{req.query.total}; 
+                       ^
+
+SyntaxError: Unexpected token '{'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:07:08.163Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '{'
+[debug] [2024-02-19T08:07:08.917Z] Validating nodejs source
+[debug] [2024-02-19T08:07:10.085Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:07:10.085Z] Building nodejs source
+[debug] [2024-02-19T08:07:10.085Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:07:10.087Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:07:10.091Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-02-19T08:07:10.099Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8352
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    const total = parsen{req.query.total}; 
+                        ^
+
+SyntaxError: Unexpected token '{'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:07:10.373Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '{'
+[debug] [2024-02-19T08:07:10.813Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:07:11.816Z] Validating nodejs source
+[debug] [2024-02-19T08:07:12.828Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:07:12.828Z] Building nodejs source
+[debug] [2024-02-19T08:07:12.828Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:07:12.837Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:07:12.840Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8537
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    const total = parse{req.query.total}; 
+                       ^
+
+SyntaxError: Unexpected token '{'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:07:13.062Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '{'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-19T08:07:16.332Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:07:17.335Z] Validating nodejs source
+[debug] [2024-02-19T08:07:18.805Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:07:18.806Z] Building nodejs source
+[debug] [2024-02-19T08:07:18.806Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:07:18.811Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:07:18.817Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] Serving at port 8602
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    const total = parseInt{req.query.total}; 
+                          ^
+
+SyntaxError: Unexpected token '{'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:07:19.139Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '{'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-19T08:07:50.058Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:07:51.060Z] Validating nodejs source
+[debug] [2024-02-19T08:07:51.997Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:07:51.997Z] Building nodejs source
+[debug] [2024-02-19T08:07:51.997Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:07:51.999Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:07:52.005Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-02-19T08:07:52.012Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8682
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    const total = parseInt{req.query.total}; 
+                          ^
+
+SyntaxError: Unexpected token '{'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:07:52.203Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '{'
+[debug] [2024-02-19T08:07:53.013Z] Validating nodejs source
+[debug] [2024-02-19T08:07:53.845Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:07:53.846Z] Building nodejs source
+[debug] [2024-02-19T08:07:53.846Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:07:53.847Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:07:53.850Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8760
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    const total = parseInt{req.query.total}; 
+                          ^
+
+SyntaxError: Unexpected token '{'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:07:54.019Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '{'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-19T08:08:05.440Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:08:06.452Z] Validating nodejs source
+[debug] [2024-02-19T08:08:07.261Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:08:07.261Z] Building nodejs source
+[debug] [2024-02-19T08:08:07.261Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:08:07.262Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:08:07.265Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8459
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    const total = parseInt{req.query.total}; 
+                          ^
+
+SyntaxError: Unexpected token '{'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:08:07.423Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '{'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-19T08:08:37.392Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:08:38.402Z] Validating nodejs source
+[debug] [2024-02-19T08:08:39.768Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:08:39.768Z] Building nodejs source
+[debug] [2024-02-19T08:08:39.768Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:08:39.769Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:08:39.773Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8915
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    const total = parseInt{req.query.total}; 
+                          ^
+
+SyntaxError: Unexpected token '{'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:08:40.035Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '{'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-19T08:09:00.705Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:09:01.719Z] Validating nodejs source
+[debug] [2024-02-19T08:09:02.882Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:09:02.882Z] Building nodejs source
+[debug] [2024-02-19T08:09:02.882Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:09:02.884Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:09:02.888Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8493
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:21
+    const total = parseInt{req.query.total}; 
+                          ^
+
+SyntaxError: Unexpected token '{'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:09:03.123Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '{'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-19T08:16:42.304Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:16:43.309Z] Validating nodejs source
+[debug] [2024-02-19T08:16:44.283Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:16:44.284Z] Building nodejs source
+[debug] [2024-02-19T08:16:44.284Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:16:44.285Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:16:44.289Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8196
+
+[debug] [2024-02-19T08:16:44.892Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-02-19T08:16:49.928Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2024-02-19T08:16:49.928Z] [worker-us-central1-api-16c92a4b-89b6-48ec-acca-4a7ce3378b25]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-16c92a4b-89b6-48ec-acca-4a7ce3378b25]: FINISHING"}}
+[debug] [2024-02-19T08:16:49.935Z] [worker-us-central1-api-16c92a4b-89b6-48ec-acca-4a7ce3378b25]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-16c92a4b-89b6-48ec-acca-4a7ce3378b25]: exited"}}
+[debug] [2024-02-19T08:16:49.935Z] [worker-us-central1-api-16c92a4b-89b6-48ec-acca-4a7ce3378b25]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-16c92a4b-89b6-48ec-acca-4a7ce3378b25]: FINISHED"}}
+[debug] [2024-02-19T08:17:24.869Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:17:25.869Z] Validating nodejs source
+[debug] [2024-02-19T08:17:26.674Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:17:26.674Z] Building nodejs source
+[debug] [2024-02-19T08:17:26.674Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:17:26.676Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:17:26.678Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-02-19T08:17:26.684Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8224
+
+[debug] [2024-02-19T08:17:26.985Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-02-19T08:17:27.686Z] Validating nodejs source
+[debug] [2024-02-19T08:17:28.619Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:17:28.619Z] Building nodejs source
+[debug] [2024-02-19T08:17:28.619Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:17:28.621Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:17:28.625Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-02-19T08:17:28.628Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8934
+
+[debug] [2024-02-19T08:17:29.007Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-02-19T08:17:29.640Z] Validating nodejs source
+[debug] [2024-02-19T08:17:30.750Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:17:30.750Z] Building nodejs source
+[debug] [2024-02-19T08:17:30.750Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:17:30.752Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:17:30.755Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-02-19T08:17:30.949Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8268
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    if(total > 0 ){
+    ^^
+
+SyntaxError: Unexpected token 'if'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:17:30.987Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token 'if'
+[debug] [2024-02-19T08:17:31.950Z] Validating nodejs source
+[debug] [2024-02-19T08:17:32.895Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:17:32.895Z] Building nodejs source
+[debug] [2024-02-19T08:17:32.895Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:17:32.897Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:17:32.901Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] Serving at port 8814
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    if(total > 0 ){
+    ^^
+
+SyntaxError: Unexpected token 'if'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:17:33.152Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token 'if'
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-02-19T08:17:35.152Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-19T08:17:36.157Z] Validating nodejs source
+[debug] [2024-02-19T08:17:37.112Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:17:37.112Z] Building nodejs source
+[debug] [2024-02-19T08:17:37.112Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:17:37.115Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:17:37.118Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-02-19T08:17:37.123Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8801
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:21
+    const total 
+          ^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:17:37.299Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration
+[debug] [2024-02-19T08:17:38.041Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-19T08:17:39.044Z] Validating nodejs source
+[debug] [2024-02-19T08:17:40.040Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:17:40.041Z] Building nodejs source
+[debug] [2024-02-19T08:17:40.041Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:17:40.042Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:17:40.047Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-02-19T08:17:40.052Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8050
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    if(total > 0 ){
+    ^^
+
+SyntaxError: Unexpected token 'if'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:17:40.253Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token 'if'
+[debug] [2024-02-19T08:17:40.728Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:17:41.738Z] Validating nodejs source
+[debug] [2024-02-19T08:17:42.678Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:17:42.678Z] Building nodejs source
+[debug] [2024-02-19T08:17:42.679Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:17:42.680Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:17:42.683Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-19T08:17:42.688Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8446
+
+[debug] [2024-02-19T08:17:43.077Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-02-19T08:17:43.690Z] Validating nodejs source
+[debug] [2024-02-19T08:17:44.856Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:17:44.856Z] Building nodejs source
+[debug] [2024-02-19T08:17:44.856Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:17:44.858Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:17:44.861Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8896
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-19T08:17:45.321Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-02-19T08:17:45.605Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:17:46.610Z] Validating nodejs source
+[debug] [2024-02-19T08:17:47.453Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:17:47.454Z] Building nodejs source
+[debug] [2024-02-19T08:17:47.454Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:17:47.455Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:17:47.458Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8035
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    if(total > 0 ){
+                  ^
+
+SyntaxError: Unexpected token '{'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:17:47.673Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '{'
+[debug] [2024-02-19T08:17:48.087Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-02-19T08:17:49.092Z] Validating nodejs source
+[debug] [2024-02-19T08:17:50.054Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:17:50.054Z] Building nodejs source
+[debug] [2024-02-19T08:17:50.054Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:17:50.056Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:17:50.060Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-02-19T08:17:50.208Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8697
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-02-19T08:17:50.412Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-02-19T08:17:51.212Z] Validating nodejs source
+[debug] [2024-02-19T08:17:52.205Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:17:52.205Z] Building nodejs source
+[debug] [2024-02-19T08:17:52.205Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:17:52.207Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:17:52.209Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8656
+
+[debug] [2024-02-19T08:17:52.447Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:17:52.612Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-19T08:17:53.451Z] Validating nodejs source
+[debug] [2024-02-19T08:17:54.380Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:17:54.380Z] Building nodejs source
+[debug] [2024-02-19T08:17:54.380Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:17:54.381Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:17:54.384Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8591
+
+[debug] [2024-02-19T08:17:54.794Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-02-19T08:17:55.587Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:17:56.588Z] Validating nodejs source
+[debug] [2024-02-19T08:17:57.631Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:17:57.632Z] Building nodejs source
+[debug] [2024-02-19T08:17:57.632Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:17:57.635Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:17:57.638Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] Serving at port 8845
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:22
+    if(total > 0 ){
+                  ^
+
+SyntaxError: Unexpected token '{'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:17:57.940Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token '{'
+[debug] [2024-02-19T08:17:58.567Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:17:59.573Z] Validating nodejs source
+[debug] [2024-02-19T08:18:00.463Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:18:00.464Z] Building nodejs source
+[debug] [2024-02-19T08:18:00.464Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:18:00.466Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:18:00.469Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] Serving at port 8979
+
+[debug] [2024-02-19T08:18:00.881Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-02-19T08:18:01.114Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:18:02.127Z] Validating nodejs source
+[debug] [2024-02-19T08:18:03.080Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:18:03.080Z] Building nodejs source
+[debug] [2024-02-19T08:18:03.080Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:18:03.084Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:18:03.089Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] Serving at port 8990
+
+[debug] [2024-02-19T08:18:03.498Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-02-19T08:26:09.383Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:26:10.398Z] Validating nodejs source
+[debug] [2024-02-19T08:26:11.565Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:26:11.565Z] Building nodejs source
+[debug] [2024-02-19T08:26:11.565Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:26:11.567Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:26:11.571Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8615
+
+[error] C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js:21
+    const total = (req.query.total;
+                                  ^
+
+SyntaxError: Unexpected token ';'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at loadModule (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+
+[debug] [2024-02-19T08:26:11.798Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token ';'
+[debug] [2024-02-19T08:26:12.230Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:26:13.238Z] Validating nodejs source
+[debug] [2024-02-19T08:26:14.220Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:26:14.220Z] Building nodejs source
+[debug] [2024-02-19T08:26:14.220Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:26:14.221Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:26:14.225Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8618
+
+[debug] [2024-02-19T08:26:14.653Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-02-19T08:26:16.708Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-19T08:26:17.714Z] Validating nodejs source
+[debug] [2024-02-19T08:26:18.728Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:26:18.729Z] Building nodejs source
+[debug] [2024-02-19T08:26:18.729Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:26:18.730Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:26:18.733Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-02-19T08:26:18.738Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8814
+
+[debug] [2024-02-19T08:26:19.201Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-02-19T08:26:19.741Z] Validating nodejs source
+[debug] [2024-02-19T08:26:20.939Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:26:20.939Z] Building nodejs source
+[debug] [2024-02-19T08:26:20.939Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:26:20.942Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:26:20.946Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-02-19T08:26:20.950Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8518
+
+[debug] [2024-02-19T08:26:21.385Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-02-19T08:26:21.571Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:26:22.583Z] Validating nodejs source
+[debug] [2024-02-19T08:26:23.538Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:26:23.538Z] Building nodejs source
+[debug] [2024-02-19T08:26:23.538Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:26:23.544Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:26:23.546Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8965
+
+[debug] [2024-02-19T08:26:23.958Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-02-19T08:26:24.670Z] File C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-19T08:26:25.676Z] Validating nodejs source
+[debug] [2024-02-19T08:26:26.645Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-19T08:26:26.645Z] Building nodejs source
+[debug] [2024-02-19T08:26:26.645Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-19T08:26:26.646Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-19T08:26:26.649Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] Serving at port 8965
+
+[debug] [2024-02-19T08:26:27.121Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-02-21T02:09:47.619Z] ----------------------------------------------------------------------
+[debug] [2024-02-21T02:09:47.622Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tefer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-02-21T02:09:47.623Z] CLI Version:   13.3.0
+[debug] [2024-02-21T02:09:47.623Z] Platform:      win32
+[debug] [2024-02-21T02:09:47.623Z] Node Version:  v20.10.0
+[debug] [2024-02-21T02:09:47.623Z] Time:          Tue Feb 20 2024 21:09:47 GMT-0500 (Eastern Standard Time)
+[debug] [2024-02-21T02:09:47.624Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-21T02:09:47.627Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-02-21T02:09:47.812Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-21T02:09:47.814Z] > authorizing via signed-in user (tsege.t6@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-02-21T02:09:47.835Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2024-02-21T02:09:47.837Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project clone-d489a. This may result in unexpected behavior. 
+[debug] [2024-02-21T02:09:47.850Z] [hub] writing locator at C:\Users\tefer\AppData\Local\Temp\hub-clone-d489a.json
+[debug] [2024-02-21T02:09:47.878Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-21T02:09:47.878Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-21T02:09:47.878Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2024-02-21T02:09:47.884Z] defaultcredentials: writing to file C:\Users\tefer\AppData\Roaming\firebase\tsege_t6_gmail.com_application_default_credentials.json
+[debug] [2024-02-21T02:09:47.896Z] Setting GAC to C:\Users\tefer\AppData\Roaming\firebase\tsege_t6_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\tefer\\AppData\\Roaming\\firebase\\tsege_t6_gmail.com_application_default_credentials.json"}}
+[debug] [2024-02-21T02:09:47.897Z] > refreshing access token with scopes: []
+[debug] [2024-02-21T02:09:47.898Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-21T02:09:47.898Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-21T02:09:47.942Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-02-21T02:09:47.942Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-02-21T02:09:48.060Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-21T02:09:48.060Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-21T02:09:48.070Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-d489a/adminSdkConfig [none]
+[debug] [2024-02-21T02:09:48.475Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-d489a/adminSdkConfig 200
+[debug] [2024-02-21T02:09:48.475Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-d489a/adminSdkConfig {"projectId":"clone-d489a","storageBucket":"clone-d489a.appspot.com"}
+[debug] [2024-02-21T02:09:48.494Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-02-21T02:09:48.495Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-02-21T02:09:48.495Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\tefer\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\tefer\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-02-21T02:09:48.690Z] Web / API server started at 127.0.0.1:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4001\n"}}
+[debug] [2024-02-21T02:09:48.690Z] Web / API server started at ::1:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4001\n"}}
+[info] i  functions: Watching "C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\tefer\\OneDrive\\Desktop\\Evangade\\classmaterials\\phase4\\Amazon-clone\\amazon\\functions\" for Cloud Functions..."}}
+[debug] [2024-02-21T02:09:48.777Z] Validating nodejs source
+[debug] [2024-02-21T02:09:51.052Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-21T02:09:51.053Z] Building nodejs source
+[debug] [2024-02-21T02:09:51.054Z] Failed to find version of module node: reached end of search path C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-21T02:09:51.058Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-21T02:09:51.066Z] Found firebase-functions binary at 'C:\Users\tefer\OneDrive\Desktop\Evangade\classmaterials\phase4\Amazon-clone\amazon\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8525
+

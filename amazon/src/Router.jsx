@@ -24,7 +24,8 @@ function Routing() {
                 <Elements stripe={stripePromise}>
                     <Payment />
                     </Elements>
-                } />
+                } 
+                />
                 <Route path='/orders' element={<Orders />} />
                 <Route path='/category/:categoryName' element={<Results />} />
                 <Route path='/products/:productId' element={<ProductDetail />} />

@@ -47,6 +47,33 @@ height: auto !important;
     padding: 8px 10px;
     cursor: pointer;
 }
+.submitpaynow {
+    display: flex;
+    margin-top: 8px;
+    padding: 6px 75px;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: #f0c14b;
+    border-radius: 5px;
+    border: none;
+
+}
+
 .payment__details button:hover {
     background-color: var(--primary-shade);
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    color: rgb(52,52,52);
+}
+
+@media screen and (max-width: 768px){
+   .flex{
+    flex-direction: column;
+   }
 }
