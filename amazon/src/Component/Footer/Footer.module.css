@@ -13,7 +13,6 @@
 .outer_wrapper{
   background-color: #232F3E;
   padding-top: 150px;
- 
 }
 
 .footer_wrapper{
@@ -104,8 +103,9 @@
 }
 
 .footer_language img{
-  width: 30%;
-  
+  /* width: 30%; */
+  width: 18px;
+
 }
 
 .ft_footer a:nth-child(2),
@@ -114,6 +114,9 @@
   border: 1px solid rgb(142, 136, 136);
   padding: 10px 20px;
   border-radius: 2px;
-
- 
+  line-height: 20px;
+  /* font-size: 13px;
+  height: 10px;
+  line-height: 18px;
+  -webkit-text-size-adjust: 100%; */
 }
