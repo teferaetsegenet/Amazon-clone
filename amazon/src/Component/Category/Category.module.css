@@ -10,20 +10,24 @@
     max-height: 250px;
     padding: 0px 10px;
 }
+
 .category a {
     text-decoration: none;
     color: rgb(35, 35, 35);
 }
+
 .category h2,
 .category p {
     padding: 5px;
     margin-left: 15px;
 }
+
 .category p {
     font-size: 12px;
     font-weight: bold;
     color: rgb(9, 132, 209);
 }
+
 .category__container {
     position: relative;
     margin-top: -10%;

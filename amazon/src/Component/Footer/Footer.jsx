@@ -1,17 +1,22 @@
 import React from 'react'
 import classes from "../Footer/Footer.module.css"
 import { TbWorld } from "react-icons/tb";
+import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
   return (
     <>
-      <div className={classes.btn_button}>
-          <a href=""><p>Back to Top</p></a>
+
+      <div className={classes.btn__button}>
+          <Link to="">
+            <p>Back to Top</p>
+            </Link>
       </div>
 
-      <div className={classes.outer_wrapper}>
-        <div className={classes.footer_container} >
-          <div className={classes.footer_wrapper}>
+      <div className={classes.outer__wrapper}>
+        <div className={classes.footer__container}>
+          <div className={classes.footer__wrapper}>
             <div>
                 <h3>Get to Know Us</h3>
                 <ul>
@@ -64,20 +69,20 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={classes.ft_footer}>
-          <a href="" className={classes.footer_logo}>
+        <div className={classes.ft__footer}>
+          <Link to="" className={classes.footer__logo}>
             <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon logo" />
-          </a>
-          <a href="">
+          </Link>
+          <Link to="">
           <TbWorld /> <p>English</p>
-          </a>
+          </Link>
           {/* <a href="">
-            <h5>$ USD-U.S.Dollar </h5>
+            <h5>$ USD-U.S. Dollar</h5>
           </a> */}
-          <a href="" className={classes.footer_language}>
+          <Link to="/" className={classes.footer__language}>
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1024px-Flag_of_the_United_States.svg.png" alt="Language" />
             <p>United States</p>
-          </a>
+          </Link>
         </div>
       </div>
     </>
